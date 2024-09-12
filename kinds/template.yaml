@@ -1,33 +1,40 @@
-$schema: "https://json-schema.org/draft/2020-12/schema"
-$id: "v1alpha1"
-title: "Template Entity"
-description: ""
-type: "object"
-properties:
-  apiVersion:
-    type: "string"
-  kind:
-    type: "string"
-    const: "Template"
-  metadata:
-    type: "object"
-    properties:
-      name:
-        type: "string"
-    required:
-      - name
-  spec:
-    type: "object"
-    properties:
-      parameters:
-        type: "object"
-        description: "json schema"
-      steps:
-        type: "object"
-    required:
-      - parameters
-required:
-  - apiVersion
-  - kind
-  - metadata
-  - spec
+apiVersion: customresource.catcode.mw/v1alpha1
+kind: ResourceDefinition
+metadata: 
+  name: TemplateResourceDefinition
+spec:
+  group: templating.catcode.mw
+  plural: templates
+  singular: template
+  kind: Template
+  versions: 
+    - name: v1alpha1
+      schema:
+        openAPISchemaV3:
+          apiVersion:
+            type: "string"
+          kind:
+            type: "string"
+            const: "Template"
+          metadata:
+            type: "object"
+            properties:
+              name:
+                type: "string"
+            required:
+              - name
+          spec:
+            type: "object"
+            properties:
+              parameters:
+                type: "object"
+                description: "json schema"
+              steps:
+                type: "object"
+            required:
+              - parameters
+        required:
+          - apiVersion
+          - kind
+          - metadata
+          - spec
