@@ -11,22 +11,24 @@ spec:
     - name: v1alpha1
       schema:
         openAPISchemaV3:
-          apiVersion:
-            type: "string"
-          kind:
-            type: "string"
-            const: "User"
-          metadata:
-            type: "object"
-            properties:
-              name:
-                type: "string"
-            required:
-              - name
-          spec:
-            type: "object"
-            required: []
-        required:
-          - apiVersion
-          - kind
-          - metadata
+          type: object
+          properties:
+            apiVersion:
+              type: "string"
+            kind:
+              type: "string"
+              const: "User"
+            metadata:
+              type: "object"
+              properties:
+                name:
+                  type: "string"
+              required:
+                - name
+            spec:
+              type: "object"
+              required: []
+          required:
+            - apiVersion
+            - kind
+            - metadata
