@@ -1,4 +1,4 @@
-apiVersion: customresource.catcode.mw/v1alpha1
+apiVersion: api.catcode.mw/v1alpha1
 kind: ResourceDefinition
 metadata: 
   name: UserResourceDefinition
