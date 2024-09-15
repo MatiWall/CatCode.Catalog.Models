@@ -4,9 +4,10 @@ metadata:
   name: TemplateResourceDefinition
 spec:
   group: templating.catcode.mw
-  plural: templates
-  singular: template
-  kind: Template
+  names: 
+    plural: templates
+    singular: template
+    kind: Template
   versions: 
     - name: v1alpha1
       schema:

@@ -1,12 +1,13 @@
-apiVersion: customresource.catcode.mw/v1alpha1
+apiVersion: api.catcode.mw/v1alpha1
 kind: ResourceDefinition
 metadata: 
   name: ApplicationResourceDefinition
 spec:
   group: templating.catcode.mw
-  plural: applications
-  singular: application
-  kind: Application
+  names:
+    plural: applications
+    singular: application
+    kind: Application
   versions: 
     - name: v1alpha1
       schema:

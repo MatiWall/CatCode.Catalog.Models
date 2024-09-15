@@ -4,9 +4,10 @@ metadata:
   name: UserResourceDefinition
 spec:
   group: templating.catcode.mw
-  plural: users
-  singular: user
-  kind: User
+  names:
+    plural: users
+    singular: user
+    kind: User
   versions: 
     - name: v1alpha1
       schema:

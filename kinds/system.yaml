@@ -4,9 +4,10 @@ metadata:
   name: SystemResourceDefinition
 spec:
   group: templating.catcode.mw
-  plural: systems
-  singular: system
-  kind: System
+  names:
+    plural: systems
+    singular: system
+    kind: System
   versions: 
     - name: v1alpha1
       schema:

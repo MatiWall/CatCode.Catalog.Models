@@ -4,9 +4,10 @@ metadata:
   name: ComponentResourceDefinition
 spec:
   group: templating.catcode.mw
-  plural: components
-  singular: component
-  kind: Component
+  names:
+    plural: components
+    singular: component
+    kind: Component
   versions: 
     - name: v1alpha1
       schema:
