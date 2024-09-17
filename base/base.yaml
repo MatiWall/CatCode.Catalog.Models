@@ -1,6 +1,8 @@
 $schema: "https://json-schema.org/draft/2020-12/schema"
 title: Base Entity
 description: All kinds should be on this format
+apiVersion: catcode.io/v1
+kind: BaseSchema
 type: object
 properties: 
   apiVersion: 
