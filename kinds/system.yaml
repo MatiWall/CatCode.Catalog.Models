@@ -14,21 +14,6 @@ spec:
         openAPISchemaV3:
           type: object
           properties:
-            apiVersion:
-              type: "string"
-            kind:
-              type: "string"
-              const: "System"
-            metadata:
-              type: "object"
-              properties:
-                name:
-                  type: "string"
-                description:
-                  type: "string"
-              required:
-                - name
-                - description
             spec:
               type: "object"
               properties:
@@ -37,7 +22,4 @@ spec:
               required:
                 - owner
           required:
-            - apiVersion
-            - kind
-            - metadata
             - spec

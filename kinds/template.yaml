@@ -14,18 +14,6 @@ spec:
         openAPISchemaV3:
           type: object
           properties:
-            apiVersion:
-              type: "string"
-            kind:
-              type: "string"
-              const: "Template"
-            metadata:
-              type: "object"
-              properties:
-                name:
-                  type: "string"
-              required:
-                - name
             spec:
               type: "object"
               properties:

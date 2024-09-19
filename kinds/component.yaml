@@ -3,7 +3,7 @@ kind: ResourceDefinition
 metadata: 
   name: ComponentResourceDefinition
 spec:
-  group: templating.catcode.io
+  group: core.catcode.io
   names:
     plural: components
     singular: component
@@ -22,30 +22,22 @@ spec:
             metadata:
               type: "object"
               properties:
-                description:
+                version:
                   type: "string"
+                  pattern: "^\\d+\\.\\d+\\.\\d+$"
+              required:
+                - version
+            spec:
+              type: "object"
+              properties:
                 system:
                   type: "string"
                 application:
-                  type: "string"
-                deployableUnit:
                   type: "string"
                 tags:
                   type: "array"
                   items:
                     type: "string"
-                version:
-                  type: "string"
-                  pattern: "^\\d+\\.\\d+\\.\\d+$"
-              required:
-                - description
-                - system
-                - application
-                - deployableUnit
-                - version
-            spec:
-              type: "object"
-              properties:
                 type:
                   type: "string"
                 lifecycle:
@@ -62,7 +54,5 @@ spec:
                 - owner
                 - dependecies
         required:
-          - apiVersion
-          - kind
           - metadata
           - spec

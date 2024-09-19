@@ -1,0 +1,23 @@
+apiVersion: api.catcode.io/v1alpha1
+kind: ResourceDefinition
+metadata: 
+  name: UserResourceDefinition
+spec:
+  group: templating.catcode.io
+  names:
+    plural: users
+    singular: user
+    kind: User
+  versions: 
+    - name: v1alpha1
+      schema:
+        openAPISchemaV3:
+          type: object
+          properties:
+            spec:
+              type: "object"
+              required: []
+          required:
+            - apiVersion
+            - kind
+            - metadata
