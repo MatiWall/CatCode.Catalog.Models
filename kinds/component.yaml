@@ -14,19 +14,6 @@ spec:
         openAPISchemaV3:
           type: object
           properties:
-            apiVersion:
-              type: "string"
-            kind:
-              type: "string"
-              const: "Component"
-            metadata:
-              type: "object"
-              properties:
-                version:
-                  type: "string"
-                  pattern: "^\\d+\\.\\d+\\.\\d+$"
-              required:
-                - version
             spec:
               type: "object"
               properties:
@@ -54,5 +41,4 @@ spec:
                 - owner
                 - dependecies
         required:
-          - metadata
           - spec
