@@ -10,16 +10,16 @@ spec:
     kind: System
   versions: 
     - name: v1alpha1
+      schemaVersion: openAPISchemaV3
       schema:
-        openAPISchemaV3:
-          type: object
-          properties:
-            spec:
-              type: "object"
-              properties:
-                owner:
-                  type: "string"
-              required:
-                - owner
-          required:
-            - spec
+        type: object
+        properties:
+          spec:
+            type: "object"
+            properties:
+              owner:
+                type: "string"
+            required:
+              - owner
+        required:
+          - spec
