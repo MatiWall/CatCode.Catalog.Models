@@ -10,22 +10,22 @@ spec:
     kind: Template
   versions: 
     - name: v1alpha1
+      schemaVersion: openAPISchemaV3
       schema:
-        openAPISchemaV3:
-          type: object
-          properties:
-            spec:
-              type: "object"
-              properties:
-                parameters:
-                  type: "object"
-                  description: "json schema"
-                steps:
-                  type: "object"
-              required:
-                - parameters
-          required:
-            - apiVersion
-            - kind
-            - metadata
-            - spec
+        type: object
+        properties:
+          spec:
+            type: "object"
+            properties:
+              parameters:
+                type: "object"
+                description: "json schema"
+              steps:
+                type: "object"
+            required:
+              - parameters
+        required:
+          - apiVersion
+          - kind
+          - metadata
+          - spec
