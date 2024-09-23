@@ -1,23 +1,49 @@
 apiVersion: api.catcode.io/v1alpha1
 kind: ResourceDefinition
 metadata: 
-  name: UserResourceDefinition
+  name: EventResourceDefinition
 spec:
-  group: templating.catcode.io
+  group: catcode.io
   names:
-    plural: users
-    singular: user
-    kind: User
+    plural: events
+    singular: event
+    kind: Event
   versions: 
     - name: v1alpha1
+      schemaVersion: openAPISchemaV3
       schema:
-        openAPISchemaV3:
-          type: object
-          properties:
-            spec:
-              type: "object"
-              required: []
-          required:
-            - apiVersion
-            - kind
-            - metadata
+        type: object
+        properties:
+          spec:
+            type: "object"
+            properties:
+              involvedObject:
+                type: object
+                properties:
+                  kind: 
+                    type: string
+                  name:
+                    type: string
+                  uid: 
+                    type: string
+                  apiVersion:
+                    type: string
+              reason:
+                type: object
+                properties:
+                  component:
+                    type: string
+              type: 
+                type: string
+                enum:
+                  - Normal
+                  - Warning
+                  - Error
+                
+                  
+            required:
+              - involvedObject
+              - reason
+              - type
+        required:
+          - spec
