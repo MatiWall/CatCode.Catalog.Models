@@ -10,35 +10,35 @@ spec:
     kind: Component
   versions: 
     - name: v1alpha1
+      schemaVersion: openAPISchemaV3
       schema:
-        openAPISchemaV3:
-          type: object
-          properties:
-            spec:
-              type: "object"
-              properties:
-                system:
+        type: object
+        properties:
+          spec:
+            type: "object"
+            properties:
+              system:
+                type: "string"
+              application:
+                type: "string"
+              tags:
+                type: "array"
+                items:
                   type: "string"
-                application:
+              type:
+                type: "string"
+              lifecycle:
+                type: "string"
+              owner:
+                type: "string"
+              dependecies:
+                type: "array"
+                items:
                   type: "string"
-                tags:
-                  type: "array"
-                  items:
-                    type: "string"
-                type:
-                  type: "string"
-                lifecycle:
-                  type: "string"
-                owner:
-                  type: "string"
-                dependecies:
-                  type: "array"
-                  items:
-                    type: "string"
-              required:
-                - type
-                - lifecycle
-                - owner
-                - dependecies
-        required:
-          - spec
+            required:
+              - type
+              - lifecycle
+              - owner
+              - dependecies
+      required:
+        - spec
