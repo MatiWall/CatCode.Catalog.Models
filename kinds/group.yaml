@@ -1,0 +1,27 @@
+apiVersion: api.catcode.io/v1alpha1
+kind: ResourceDefinition
+metadata:
+  name: GroupResourceDefinition
+spec:
+  group: catcode.io
+  names:
+    plural: groups
+    singular: group
+    kind: Group
+  versions:
+    - name: v1alpha1
+      schemaVersion: openAPISchemaV3
+      schema:
+        type: object
+        properties:
+          spec:
+            type: object
+            properties:
+              parent:
+                type: string
+              children:
+                type: array
+              members:
+                type: array
+        required:
+          - spec

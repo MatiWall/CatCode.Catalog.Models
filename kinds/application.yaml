@@ -17,6 +17,8 @@ spec:
           spec:
             type: "object"
             properties:
+              system: 
+                type: string
               owner:
                 type: "string"
             required:
