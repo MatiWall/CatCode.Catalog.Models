@@ -15,26 +15,26 @@ spec:
         type: object
         properties:
           spec:
-            type: "object"
+            type: object
             properties:
               system:
-                type: "string"
+                type: string
               application:
-                type: "string"
+                type: string
               tags:
-                type: "array"
+                type: array
                 items:
-                  type: "string"
+                  type: string
               type:
-                type: "string"
+                type: string
               lifecycle:
-                type: "string"
+                type: string
               owner:
-                type: "string"
+                type: string
               dependecies:
-                type: "array"
+                type: array
                 items:
-                  type: "string"
+                  type: string
             required:
               - type
               - lifecycle

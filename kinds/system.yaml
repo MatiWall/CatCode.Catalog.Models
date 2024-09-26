@@ -15,10 +15,10 @@ spec:
         type: object
         properties:
           spec:
-            type: "object"
+            type: object
             properties:
               owner:
-                type: "string"
+                type: string
             required:
               - owner
         required:

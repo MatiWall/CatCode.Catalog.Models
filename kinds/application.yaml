@@ -15,15 +15,13 @@ spec:
         type: object
         properties:
           spec:
-            type: "object"
+            type: object
             properties:
               system: 
                 type: string
               owner:
-                type: "string"
+                type: string
             required:
               - owner
-            partOfSystem: 
-              type: string
       required:
         - spec

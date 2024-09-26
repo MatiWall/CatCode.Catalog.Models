@@ -16,6 +16,25 @@ spec:
         properties:
           spec:
             type: object
-            required: []
+            properties:
+              profile:
+                type: object
+                properties:
+                  email:
+                    type: string
+                    description: Email where the user can be reached.
+                  displayName:
+                    type: string
+                    description: A name for the user
+                  image:
+                    type: string
+                    description: The url of a picture representing the user 
+              memberOf:
+                type: array
+                description: A list of groups that the user is a member of
+                items:
+                  type: string
+            required:
+              - memberOf
         required:
           - spec
