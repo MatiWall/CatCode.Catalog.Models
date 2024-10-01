@@ -19,6 +19,8 @@ spec:
             properties:
               owner:
                 type: string
+              description:
+                type: string
             required:
               - owner
         required:
