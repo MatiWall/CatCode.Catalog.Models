@@ -19,13 +19,16 @@ spec:
             properties:
               parent:
                 type: string
+                nullable: true
               children:
                 type: array
                 items:
                   type: string
+                default: []
               members:
                 type: array
                 items:
                   type: string
+                default: []
         required:
           - spec

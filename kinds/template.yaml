@@ -15,17 +15,17 @@ spec:
         type: object
         properties:
           spec:
-            type: "object"
+            type: object
             properties:
               parameters:
-                type: "object"
+                type: object
                 description: "json schema"
+                nullable: true
               steps:
-                type: "object"
+                type: object
+                nullable: true
             required:
               - parameters
+              - steps
         required:
-          - apiVersion
-          - kind
-          - metadata
           - spec

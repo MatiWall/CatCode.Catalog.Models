@@ -21,6 +21,7 @@ spec:
                 type: string
               description:
                 type: string
+                default: ''
             required:
               - owner
         required:

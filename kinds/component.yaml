@@ -40,5 +40,7 @@ spec:
               - lifecycle
               - owner
               - dependecies
+              - system
+              - aplication
       required:
         - spec

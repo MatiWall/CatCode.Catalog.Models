@@ -23,5 +23,6 @@ spec:
                 type: string
             required:
               - owner
+              - system
       required:
         - spec
