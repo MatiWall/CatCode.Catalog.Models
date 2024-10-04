@@ -42,6 +42,6 @@ spec:
               - owner
               - dependecies
               - system
-              - aplication
+              - application
         required:
           - spec
