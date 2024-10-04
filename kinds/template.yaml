@@ -3,7 +3,7 @@ kind: ResourceDefinition
 metadata: 
   name: TemplateResourceDefinition
 spec:
-  group: templating.catcode.io
+  group: catcode.io
   names: 
     plural: templates
     singular: template
