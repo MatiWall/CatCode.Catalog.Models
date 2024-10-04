@@ -21,20 +21,22 @@ spec:
                 type: object
                 properties:
                   email:
-                    type: string
+                    type: ['string', 'null']
                     description: Email where the user can be reached.
                   displayName:
-                    type: string
+                    type: ['string', 'null']
                     description: A name for the user
                   image:
-                    type: string
+                    type: ['string', 'null']
                     description: The url of a picture representing the user 
               memberOf:
                 type: array
                 description: A list of groups that the user is a member of
                 items:
                   type: string
+                default: []
             required:
               - memberOf
+              - profile
         required:
           - spec
