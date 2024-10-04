@@ -3,7 +3,7 @@ kind: ResourceDefinition
 metadata: 
   name: ComponentResourceDefinition
 spec:
-  group: core.catcode.io
+  group: catcode.io
   names:
     plural: components
     singular: component

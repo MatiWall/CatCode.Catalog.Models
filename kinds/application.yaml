@@ -3,7 +3,7 @@ kind: ResourceDefinition
 metadata: 
   name: ApplicationResourceDefinition
 spec:
-  group: templating.catcode.io
+  group: catcode.io
   names:
     plural: applications
     singular: application

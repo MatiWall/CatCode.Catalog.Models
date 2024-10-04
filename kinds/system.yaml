@@ -3,7 +3,7 @@ kind: ResourceDefinition
 metadata: 
   name: SystemResourceDefinition
 spec:
-  group: templating.catcode.io
+  group: catcode.io
   names:
     plural: systems
     singular: system

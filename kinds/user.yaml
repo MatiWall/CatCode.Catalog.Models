@@ -3,7 +3,7 @@ kind: ResourceDefinition
 metadata: 
   name: UserResourceDefinition
 spec:
-  group: templating.catcode.io
+  group: catcode.io
   names:
     plural: users
     singular: user

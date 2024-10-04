@@ -15,32 +15,37 @@ spec:
         type: object
         properties:
           spec:
-            type: "object"
+            type: object
             properties:
               involvedObject:
                 type: object
                 properties:
-                  kind: 
+                  kind:
                     type: string
                   name:
                     type: string
-                  uid: 
+                  uid:
                     type: string
                   apiVersion:
                     type: string
+                required:
+                  - kind
+                  - name
+                  - uid
+                  - apiVersion  # Mark as required if needed
               reason:
                 type: object
                 properties:
                   component:
                     type: string
-              type: 
+                required:
+                  - component  # Mark as required if needed
+              type:
                 type: string
                 enum:
                   - Normal
                   - Warning
                   - Error
-                
-                  
             required:
               - involvedObject
               - reason
