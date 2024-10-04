@@ -25,6 +25,7 @@ spec:
                 type: array
                 items:
                   type: string
+                default: []
               type:
                 type: string
               lifecycle:
