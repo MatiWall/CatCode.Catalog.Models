@@ -42,5 +42,5 @@ spec:
               - dependecies
               - system
               - aplication
-      required:
-        - spec
+        required:
+          - spec
