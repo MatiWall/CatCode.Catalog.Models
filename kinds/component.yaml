@@ -24,6 +24,10 @@ spec:
                 default: []
               type:
                 type: string
+                enum:
+                  - API
+                  - Job
+                  - Service
               lifecycle:
                 type: string
               owner:
