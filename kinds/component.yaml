@@ -17,10 +17,6 @@ spec:
           spec:
             type: object
             properties:
-              system:
-                type: string
-              application:
-                type: string
               tags:
                 type: array
                 items:
