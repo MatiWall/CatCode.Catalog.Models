@@ -41,7 +41,5 @@ spec:
               - type
               - lifecycle
               - owner
-              - system
-              - application
         required:
           - spec
