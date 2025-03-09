@@ -7,7 +7,7 @@ type: object
 properties:
   apiVersion:
     type: string
-    pattern: "^[a-z0-9]+(?:\\.[a-z0-9]+)*/v[0-9]+(alpha|beta)?[0-9]*$"
+    pattern: "^[a-z0-9]+(?:\.[a-z0-9]+)*\/((v\d+)|(v\d+alpha\d+)|(v\d+beta\d+))$"
   kind:
     type: string
     pattern: "^[A-Z][a-z0-9]+(?:[A-Z][a-z0-9]+)*$"
