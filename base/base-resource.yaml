@@ -29,7 +29,7 @@ properties:
         default: {}
       annotations:
         type: object
-        description: Arbitarary metadata for external tools or additional information.
+        description: Arbitrary metadata for external tools or additional information.
         additionalProperties:
           type: string
         default: {}
